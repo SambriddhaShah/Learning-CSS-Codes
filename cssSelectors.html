@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Styling the html file using <style>, tag -->
+    <style>
+        /* '*'' is used as a universal selector for selecting all the elements at once */
+         *{
+            margin: 2;
+            padding: 2;
+         }
+        /* selecting a tag and then styling the tag */
+        div{
+            background-color: lightblue;
+        }
+        /* selecting the class named class and styling it */
+        .class{
+            color: antiquewhite;
+        }
+        /* selecting the id and then styling the elment with id */
+        #id{
+            color: blanchedalmond;
+        }
+        /* selecting the class named span and class named extra together */
+        .extra,.span{
+            background-color: lightgreen;
+            border: 2px solid black;
+        }
+        /* This is overridden by the inline CSS */
+        span.red{
+            color:blue;
+            background-color: red;
+        }
+        /* This overrides the CSS written in the stylesheet */
+        .style{
+            color: aliceblue;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div id="id">
+            Lorem ipsum dolor sit amet.
+       </div>
+       <div class="class">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <span class="">
+            Hii I am first
+        </span>
+        <div class="span">
+            Hii I am second
+        </div>
+        <span class="span">
+            Hii I am third
+        </span>
+        <div class="extra">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+       <span class="red">
+        Hii i am red
+       </span>
+        <!--inline css can override the other types of CSS written  -->
+       <div class="red" style="color: yellow;">
+        Hii I am overridden by inline css
+       </div>
+       <!-- style tag css can override the css written in stylesheet css -->
+       <div class="style">
+        Hii I am overridden by style tag
+       </div>
+   </div> 
+</body>
+</html>
